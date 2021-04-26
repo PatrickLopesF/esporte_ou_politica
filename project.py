@@ -54,9 +54,6 @@ products_list_p_3 = df_p_3_clean.values.tolist()
 data = products_list_e + products_list_e_2 + products_list_e_3 + products_list_p + products_list_p_2 + products_list_p_3 
 
 
-#print(products_list_e)
-#print(products_list_p)
-
 training, test = train_test_split(data, test_size = 0.33, random_state=42)
 
 train_x = [i for i, j in training]
